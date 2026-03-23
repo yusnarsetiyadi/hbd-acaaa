@@ -1388,52 +1388,55 @@ audio {
     }
 
     .container {
-        transform: scale(0.5);
+        transform: scale(0.6);
         transform-origin: top center;
-        height: 100vh;
+        height: auto;
         width: 100vw;
-        overflow: hidden;
+        overflow: visible;
     }
 
     .album-photo {
-        width: 14vw;
+        width: 15vw;
+        max-width: 120px;
         border-width: 0.5vw;
+        max-width: 100%;
+        height: auto;
     }
 
     .album-left-1 {
-        top: 2vh;
+        top: 3vh;
         left: 3vw;
     }
 
     .album-left-2 {
-        top: 15vh;
+        top: 12vh;
         left: 4vw;
     }
 
     .album-right-1 {
-        top: 2vh;
+        top: 3vh;
         right: 3vw;
     }
 
     .album-right-2 {
-        top: 15vh;
+        top: 12vh;
         right: 4vw;
     }
 
     .can-zoom {
-        width: 15vw;
-        right: 3vw;
-        top: 25vh;
+        width: 12vw;
+        right: 4vw;
+        top: 22vh;
     }
 
     .balloons {
-        width: 8vw;
-        height: 14vh;
-        background-size: 8vw 14vh;
+        width: 7vw;
+        height: 12vh;
+        background-size: 7vw 12vh;
     }
 
     .balloons h2 {
-        font-size: 3vw;
+        font-size: 3.5vw;
         text-shadow: 1px 1px 1px #FFF;
     }
 
@@ -1442,57 +1445,72 @@ audio {
     }
 
     .bulb {
-        width: 3.5vw;
-        height: 3.5vw;
-        background-size: 3.5vw 3.5vw;
+        width: 4vw;
+        height: 4vw;
+        background-size: 4vw 4vw;
     }
 
     .cake-cover {
         margin-top: 2vh;
-        height: 35vh;
+        height: 30vh;
     }
 
     .message {
-        top: 70vh;
-        width: 90vw;
+        top: 55vh;
+        width: 95vw;
         padding: 0 2vw;
-        height: 20vh;
-        overflow: hidden;
+        height: auto;
+        overflow: visible;
+        max-height: 20vh;
     }
 
     .message p {
-        font-size: 3vw;
-        margin: 0.5vh 0;
-        line-height: 1.1;
+        font-size: 14px;
+        margin: 0.3vh 0;
+        line-height: 1.2;
     }
 
     .navbar-fixed-bottom {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95vw;
         padding: 1vh 0;
-        max-height: 15vh;
-        overflow: hidden;
+        max-height: 18vh;
+        overflow: visible;
+        z-index: 9999;
+        background: transparent;
     }
 
     .navbar-fixed-bottom .row {
         flex-wrap: wrap;
         justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .navbar-fixed-bottom .col-md-6 {
         width: 100%;
         max-width: 100%;
+        text-align: center;
     }
 
     .btn-primary {
-        padding: 1vh 1vw;
-        font-size: 2.5vw;
-        margin: 0.3vh 0.5vw;
-        min-height: 5vh;
+        padding: 1.2vh 1.5vw;
+        font-size: 14px;
+        margin: 0.5vh 1vw;
+        min-height: 44px;
+        width: auto;
+        display: inline-block;
     }
 
     .bannar {
-        max-width: 90vw;
+        max-width: 95vw;
         height: auto;
-        max-height: 12vh;
+        max-height: 10vh;
+        object-fit: contain;
     }
 
     .balloon-border {
@@ -1500,7 +1518,14 @@ audio {
     }
 
     .lightbox img {
-        max-width: 90vw;
-        max-height: 80vh;
+        max-width: 95vw;
+        max-height: 85vh;
+        object-fit: contain;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 }
